@@ -7,6 +7,7 @@
 //
 
 import UIKit
+
 class ViewController: UIViewController {
     
     //Place your instance variables here
@@ -34,8 +35,10 @@ class ViewController: UIViewController {
             nextQuestion()
             if(questionNumber <= 12 &&  questionNumber != 0){
                  updateUI(question: allQuestions.list[questionNumber])
+                    ProgressHUD.showSuccess("Voce acertou")
             }
         }else{
+            ProgressHUD.showError("Voce errou!")
             startOver()
             SoundPlayerUtil.tocarSom(forResource: "note8", ofType: "mp3")
         }

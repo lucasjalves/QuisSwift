@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2659962D2252FFB800BE8516 /* ProgressHUD.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 2659962B2252FFB800BE8516 /* ProgressHUD.bundle */; };
+		2659962E2252FFB800BE8516 /* ProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = 2659962C2252FFB800BE8516 /* ProgressHUD.m */; };
 		26AC1F0F224B177D006E0E98 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AC1F0E224B177D006E0E98 /* Question.swift */; };
 		26AC1F11224B1950006E0E98 /* QuestionBank.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26AC1F10224B1950006E0E98 /* QuestionBank.swift */; };
 		26AC1F15224B20EB006E0E98 /* note8.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 26AC1F14224B20EB006E0E98 /* note8.mp3 */; };
@@ -20,6 +22,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		265996292252FFB600BE8516 /* Quizzler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Quizzler-Bridging-Header.h"; sourceTree = "<group>"; };
+		2659962A2252FFB700BE8516 /* ProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressHUD.h; sourceTree = "<group>"; };
+		2659962B2252FFB800BE8516 /* ProgressHUD.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = ProgressHUD.bundle; sourceTree = "<group>"; };
+		2659962C2252FFB800BE8516 /* ProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressHUD.m; sourceTree = "<group>"; };
 		26AC1F0E224B177D006E0E98 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
 		26AC1F10224B1950006E0E98 /* QuestionBank.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionBank.swift; sourceTree = "<group>"; };
 		26AC1F14224B20EB006E0E98 /* note8.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = note8.mp3; sourceTree = "<group>"; };
@@ -85,9 +91,13 @@
 		633646BC1B8C657400FF45E2 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				2659962B2252FFB800BE8516 /* ProgressHUD.bundle */,
+				2659962A2252FFB700BE8516 /* ProgressHUD.h */,
+				2659962C2252FFB800BE8516 /* ProgressHUD.m */,
 				26AC1F14224B20EB006E0E98 /* note8.mp3 */,
 				633646C71B8C657400FF45E2 /* LaunchScreen.xib */,
 				633646BD1B8C657400FF45E2 /* Info.plist */,
+				265996292252FFB600BE8516 /* Quizzler-Bridging-Header.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -151,7 +161,7 @@
 				TargetAttributes = {
 					633646B81B8C657400FF45E2 = {
 						CreatedOnToolsVersion = 6.4;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -180,6 +190,7 @@
 			files = (
 				ADEB04ED1FBDFEAA00026359 /* Main.storyboard in Resources */,
 				633646C91B8C657400FF45E2 /* LaunchScreen.xib in Resources */,
+				2659962D2252FFB800BE8516 /* ProgressHUD.bundle in Resources */,
 				AD6F1CCC20EBCFF600198C34 /* README.md in Resources */,
 				26AC1F15224B20EB006E0E98 /* note8.mp3 in Resources */,
 				633646C61B8C657400FF45E2 /* Images.xcassets in Resources */,
@@ -193,6 +204,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2659962E2252FFB800BE8516 /* ProgressHUD.m in Sources */,
 				26AC1F18224B2157006E0E98 /* SoundPlayerUtil.swift in Sources */,
 				26AC1F0F224B177D006E0E98 /* Question.swift in Sources */,
 				26AC1F11224B1950006E0E98 /* QuestionBank.swift in Sources */,
@@ -336,7 +348,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucasjulio.Quizzler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lucasjulio/Documents/quizzler-iOS12/Quizzler/Quizzler-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
@@ -353,7 +365,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.lucasjulio.Quizzler;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_OBJC_BRIDGING_HEADER = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "/Users/lucasjulio/Documents/quizzler-iOS12/Quizzler/Quizzler-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Off;
 				SWIFT_VERSION = 4.0;
 			};
